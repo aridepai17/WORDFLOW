@@ -1,3 +1,8 @@
+/**
+ * Renders the welcome section for the application, allowing users to enter their name and start the account creation process.
+ * 
+ * Displays a heading, a motivational subheading with an icon, an input field for the user's name, and a button to initiate account creation. The button is disabled until a name is entered.
+ */
 export default function Welcome(props) {
   const {name, setName, handleCreateAccount } = props
   
