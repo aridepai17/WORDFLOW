@@ -63,24 +63,55 @@ The project follows a standard React application structure:
 
 ```
 wordflow/
-├── public/              # Static assets
-├── src/
-│   ├── assets/          # Image assets
-│   ├── components/      # Reusable React components
-│   │   ├── layouts/     # Layout components (e.g., Dashboard, Challenge)
-│   │   ├── Countdown.jsx
-│   │   ├── History.jsx
-│   │   ├── ProgressBar.jsx
-│   │   └── ...
-│   ├── App.jsx          # Main application component
-│   ├── main.jsx         # Entry point of the application
-│   └── index.css        # Global CSS styles
-├── .gitignore
-├── eslint.config.js
-├── index.html           # Main HTML file
-├── package.json
-└── vite.config.js
+├── 📁 final/                  # Demo screenshots & assets
+│   ├── app.png               # Main application interface
+│   └── homepage.png          # Landing page preview
+├── 📁 public/                # Static assets & favicon
+│   └── vocab.png             # App icon/logo
+├── 📁 src/
+│   ├── 📁 assets/            # React & image assets
+│   │   └── react.svg         # React logo
+│   ├── 📁 components/        # Reusable UI components
+│   │   ├── 📁 layouts/       # Page layout components
+│   │   │   ├── Challenge.jsx # Daily challenge interface
+│   │   │   ├── Dashboard.jsx # Main dashboard interface
+│   │   │   ├── Layout.jsx    # Root layout wrapper
+│   │   │   └── Welcome.jsx   # Onboarding experience
+│   │   ├── Countdown.jsx     # Challenge timer component
+│   │   ├── History.jsx       # Learning history display
+│   │   ├── ProgressBar.jsx   # Visual progress indicators
+│   │   └── Stats.jsx         # Performance analytics
+│   ├── 📁 utils/             # Helper functions & data
+│   │   ├── index.js          # Core utility functions & SRS logic
+│   │   └── VOCAB.json        # Vocabulary database
+│   ├── App.jsx               # Root application component
+│   ├── fanta.css             # FantaCSS framework styles
+│   ├── index.css             # Global styles & CSS variables
+│   └── main.jsx              # React DOM entry point
+├── .gitignore                # Git ignore rules
+├── eslint.config.js          # ESLint configuration
+├── index.html                # HTML template
+├── package-lock.json         # Dependency lock file
+├── package.json              # Dependencies & scripts
+├── README.md                 # Project documentation
+└── vite.config.js            # Vite build configuration
 ```
+
+## 🎯 USAGE GUIDE
+### Getting Started
+
+1. Enter your name on the welcome screen to personalize your experience
+2. Begin your first challenge - you'll see a word and need to type its definition
+3. Receive immediate feedback as you type, with helpful hints and corrections
+4. Complete your daily goal to maintain your learning streak
+5. Return daily to reinforce previous words and learn new ones
+
+<b>Pro Tips for Success</b>
+
+1. Consistency over intensity: 10 minutes daily beats 2 hours weekly
+2. Focus on accuracy: The algorithm adapts to your performance
+3. Use the dashboard: Review your progress to stay motivated
+4. Don't break the streak: Daily practice creates lasting habits
 
 ## 🙏 ACKNOWLEDGEMENTS
 
@@ -89,6 +120,16 @@ A huge thank you to the following resources which made this project possible:
 *   **[React](https://react.dev/)** and **[Vite](https://vitejs.dev/)** for the incredible development experience.
 *   **[FantaCSS](https://www.fantacss.smoljames.com/)** for the simple and elegant CSS styling.
 *   The open-source community for providing the tools and libraries that power this application.
+
+## 🤝 CONTRIBUTING
+We welcome contributions from the community! Whether you're fixing bugs, adding features, or improving documentation, your help makes WordFlow better for everyone.
+### How to Contribute
+
+1. Fork the repository
+2. Create a feature branch (git checkout -b feature/amazing-feature)
+3. Commit your changes (git commit -m 'Add amazing feature')
+4. Push to the branch (git push origin feature/amazing-feature)
+5. Open a Pull Request
 
 ## 🌟 JOIN THE FLOW!
 
