@@ -27,7 +27,7 @@ export default function Welcome(props) {
         Start the challenge today!
       </h6>
       <div>
-        <input value={name} onChange={(evt) = setName(evt.target.value)} type="text" placeholder="Enter your name ..." />
+        <input value={name} onChange={(evt) =>{ setName(evt.target.value)}} type="text" placeholder="Enter your name ..." />
         <button disabled={!name} onClick={handleCreateAccount}>
           <h6>Start &rarr;</h6>
         </button>
