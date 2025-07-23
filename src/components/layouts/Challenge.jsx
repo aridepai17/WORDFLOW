@@ -41,9 +41,9 @@ export default function Challenge(props) {
       <div className="helper">
         <div>
           {/* CONTAINS ALL THE ERROR CORRECTION VISUAL BARS */}
-          {[...Array(definition.length).keys()].map((element, elementIdx) => {
+          {[...Array(definition.length).keys()].map((char, elementIdx) => {
             const styleToApply =
-              inputVal.length < char + 1
+              inputVal.length < char + 1 
                 ? " "
                 : inputVal.split("")[elementIdx].toLowerCase() ==
                   definition.split("")[elementIdx].toLowerCase()
@@ -60,7 +60,7 @@ export default function Challenge(props) {
             // If the entry is incorrect, we need to increment attempts
             if (
               e.target.value.length == definition.length &&
-              e.target.value.length > inputVal.length
+              inputVal.length !== definition.length // Alllow users to delete characters once they've typed the full length
             ) {
               // compare words
               handleIncrementAttempts();
